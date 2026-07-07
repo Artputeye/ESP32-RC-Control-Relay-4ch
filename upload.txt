@@ -1,0 +1,3 @@
+pio run -t erase
+pio run -t uploadfs
+pio run --target upload 

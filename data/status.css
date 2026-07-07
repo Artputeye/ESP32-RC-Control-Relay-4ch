@@ -1,0 +1,43 @@
+.status-box {
+  display: flex;
+  /* ดันข้อความไปซ้ายสุด และ lamp ไปขวาสุด */
+  justify-content: space-between; 
+  align-items: center;
+  
+  background: #fff;
+  padding: 10px 12px; /* ปรับ padding ให้ดูสมดุล */
+  margin-bottom: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  
+  /* มั่นใจว่ากล่องกว้างเต็มพื้นที่ที่มี */
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.status-info {
+    display: flex;
+    gap: 8px; /* เว้นระยะห่างระหว่าง Icon กับ Text */
+    align-items: center;
+}
+
+.lamp {
+  width: 20px;  /* ขยายขนาดขึ้นเล็กน้อย */
+  height: 20px;
+  border-radius: 50%;
+  
+  /* ป้องกันไม่ให้โดนข้อความเบียดจนแบน */
+  flex-shrink: 0; 
+  margin-left: 10px; /* เว้นระยะห่างจากตัวอักษรนิดนึง */
+}
+
+/* สถานะไฟสว่าง */
+.lamp-on {
+  background: #00c853;
+  box-shadow: 0 0 8px rgba(0, 200, 83, 0.6);
+}
+
+/* สถานะไฟดับ */
+.lamp-off {
+  background: #cbd5e1; /* สีเทาที่ดูเข้ากับดีไซน์ใหม่มากขึ้น */
+}
